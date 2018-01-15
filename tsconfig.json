@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "lib": [
+            "es2017"
+        ],
+
+        "module": "commonjs",
+        "moduleResolution": "node",
+
+        "typeRoots": [
+            "./types"
+        ],
+
+        "baseUrl": "src",
+        "outDir": "out",
+
+        "strict": true,
+        "noUnusedLocals": true,
+
+        "experimentalDecorators": true,
+
+        "plugins": [
+            { "name": "tslint-language-service" }
+        ]
+    },
+
+    "include": [
+        "./src/**/*"
+    ],
+
+    "exclude": [
+        "./**/__tests__/"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "gh-mergebot",
+  "version": "0.1.0",
+  "description": "GitHub Merge Bot",
+  "homepage": "https://github.com/jaredru/gh-mergebot",
+  "author": {
+    "name": "Jared Russell",
+    "url": "http://github.com/jaredru"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaredru/gh-mergebot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaredru/gh-mergebot/issues"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8.9.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc-watch -p tsconfig.json --onSuccess 'node out/app.js'",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.43",
+    "@types/koa-bodyparser": "^3.0.26",
+    "@types/koa-router": "^7.0.27",
+    "@types/node-fetch": "^1.6.7",
+    "tsc-watch": "1.0.10",
+    "tslint": "^5.9.1",
+    "tslint-language-service": "^0.9.8",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "node-fetch": "^1.7.3"
+  }
+}
